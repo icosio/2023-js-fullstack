@@ -1,0 +1,20 @@
+{
+  "name": "sesion01",
+  "version": "1.0.0",
+  "description": "Mi primer proyecto con node",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "browser-sync src --watch"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "ja",
+    "jascript"
+  ],
+  "author": "Imelda Cosio",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.27.11"
+  }
+}
