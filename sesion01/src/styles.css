@@ -4,9 +4,9 @@ body{
 
  }
 
- h1 {  magin: 1.em;   font-size: xx-large;
+ h1 {  margin: 1.em;   font-size: xx-large;
  }
- 
+
  .container{
     display: flex;
     flex-direction: column;
