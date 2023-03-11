@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+$bg-color: #001EBA;
+$padding: 15px;
+$margin: 15px;
+$borders: 15px;
+$tablet: 769px;
+$font-stack: 'Roboto', sans-serif;
+
+$color:(
+    primary: $bg-color,
+    primary-light: lighten($bg-color, 20%),
+    primary-dark: darken($bg-color, 20%),
+    accent: invert($bg-color)
+);
+
+@function colorFn($color-name){
+    @return map-get($map: $color, $key: $color-name );
+}
+
+@mixin tablet{
+    @media(min-width: $tablet){
+        @content;
+    }
+}
+
+body{
+   height: 100vh;
+   font-family: $font-stack;
+
+   section#bg{
+        clip-path: polygon(100% 0, 100% 80%, 45% 100%, 0 100% ,0 0);
+        background-color: colorFn(primary);
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+
+        @include tablet{           
+                clip-path: polygon(50% 0%, 91% 0, 74% 100%, 50% 100%, 0 100%, 0 0);
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: block;
+            padding: $padding;
+        }
+
+        main{
+
+            @include tablet{
+                display: grid;
+                grid-template-columns: 1fr 3fr;
+                grid-template-areas: "primary card"
+            }
+
+            section#card{
+                background-color: white;
+                padding: $padding + 5px;
+                margin: $margin auto;
+                border-radius: $borders;
+                box-shadow: 0 10px 30px rgba($color: #000000, $alpha: 3);
+                width: 80%;
+                @include tablet{
+                    //grid-area
+                    grid-area: card;
+                    align-self: center;
+                    margin: 1em;
+                    
+                }
+
+                ul{
+                    list-style-type: none;
+                    display: flex;
+                    flex-direction: column;
+                    li{
+                        display: flex;
+                        align-items: center;
+                        margin: calc($margin/2);
+                        span{
+                            width: 30px;
+                            height: 30px;
+                            background-color: colorFn(primary-light);
+                            border-radius: calc($borders/2);
+                        }
+                        strong{
+                            display: inline-block;
+                        }
+                    }
+                }
+
+            }
+
+            section#primary {
+                color: white;
+                padding: $padding;
+
+                text-align: center;
+                @include tablet{
+                    grid-area: primary;
+                    text-align: left;
+                    margin: 3em 0 0 3em;
+                }
+
+                h1{
+                    font-size: 3em;
+                    margin-top: $margin;
+                    text-transform: uppercase;
+                    @include tablet{
+                        width: 30%;
+                        font-size: 4em;
+                        line-height: 1em;
+                    }
+                }
+
+                p{
+                    font-size: 1.5em;
+
+                }
+
+                a{
+                  color: colorFn(primary-dark);
+                  border-radius: $borders;
+                  text-decoration: none;
+                  text-transform: uppercase;
+                  font-weight: bold;
+                  background-color: colorFn(accent);
+                  display: block;
+                  text-align: center;
+                  margin: $margin*3 auto 0 auto;
+                  padding: $padding;
+                  @include tablet{
+                    display:  inline-block;
+                    padding: $padding $padding*4;
+
+
+                }
+                }
+              
+            }
+        }
+
+   }
+   
+}
