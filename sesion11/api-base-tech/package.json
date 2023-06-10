@@ -1,0 +1,17 @@
+{
+  "name": "api-base-tech",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.1.4",
+    "winston": "^3.9.0",
+    "winston-daily-rotate-file": "^4.7.1"
+  }
+}
