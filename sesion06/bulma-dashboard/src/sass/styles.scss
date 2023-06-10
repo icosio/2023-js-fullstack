@@ -1,0 +1,38 @@
+// pasos para personalizar bulma
+// 1 - definir mis propias variables
+// 2 - actualizar variables de bulma
+// 3 - importar bulma
+
+// 1 - definir mis propias variables
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+$purple: hsl(271, 100%, 71%);
+$pink: #FA7C91;
+$brown: #757763;
+$beige-light: #D0D1CD;
+$beige-lighter: #EFF0EB;
+
+// 2 - actualizar variables de bulma
+$family-sans-serif: "Nunito", sans-serif;
+$grey-dark: $brown;
+$grey-light: $beige-light;
+$primary: $purple;
+$link: $pink;
+$widescreen-enabled: true;
+$fullhd-enabled: true;
+
+$body-background-color: $beige-lighter;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+// 3 - importar bulma
+@import "~bulma/bulma";
+// @import "~bulma/sass/utilities/_all.sass";
+// @import "~bulma/sass/base/_all.sass";
+// @import "~bulma/sass/elements/button.sass";
+// @import "~bulma/sass/elements/container.sass";
+// @import "~bulma/sass/elements/title.sass";
+// @import "~bulma/sass/form/_all.sass";
+// @import "~bulma/sass/components/navbar.sass";
+// @import "~bulma/sass/layout/hero.sass";
+// @import "~bulma/sass/layout/section.sass";

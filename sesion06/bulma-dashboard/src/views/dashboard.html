@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <!--navbar-->
+  <nav class="navbar">
+    <!--navbar-brand-->
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.certificatic.org">
+        <img src="https://placehold.co/300/orange/white?text=Logo" alt="certificatic logo">
+      </a>
+      <div class="navbar-burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <!--navbar-menu-->
+    <div class="navbar-menu">
+      <div class="navbar-start">
+        <div class="navbar-item">
+          <small>My company dashboard</small>
+        </div>
+      </div>
+      <div class="navbar-end">
+        <div class="navbar-item has dropdown is-hoverable">
+          <div class="navbar-link">Imelda Cosio</div>
+          <div class="navbar-dropdown">
+            <div class="navbar-item">
+              <span class="icon">
+                <i class="fa-solid fa-user"></i>
+              </span>
+              Perfil
+            </div>
+            <div class="navbar-item">
+              <span class="icon">
+                <i class="fa-solid fa-chart-simple"></i>
+              </span>
+              Estadísticas
+            </div>
+            <div class="navbar-item">
+              <span class="icon">
+                <i class="fa-solid fa-right-from-bracket"></i>
+              </span>
+              Salir
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--main section-->
+  <section class="section">
+    <div class="columns">
+      <!--left column-->
+      <div class="column is-4-tablet is-3-desktop is-2-widescreen">
+        <aside class="menu">
+          <p class="menu-label">Menu</p>
+          <ul class="menu-list">
+            <li>
+              <a href="dashboard.html">
+                <span class="icon"><i class="fa-solid fa-chart-simple"></i></span>
+                Dashboard
+              </a>
+            </li>
+            <li>
+              <a href="books.html">
+                <span class="icon"><i class="fa-solid fa-book"></i></i></span>
+                Libros
+              </a>
+            </li>
+            <li>
+              <a href="customers.html">
+                <span class="icon"><i class="fa-solid fa-person"></i></span>
+                Clientes
+              </a>
+            </li>
+            <li>
+              <a href="orders.html">
+                <span class="icon"><i class="fa-solid fa-file"></i></span>
+                Órdenes
+              </a>
+            </li>
+          </ul>
+        </aside>
+      </div>
+      <!--right column-->
+      <div class="column">
+
+        <div class="level">
+          <!--user logged-->
+          <div class="level-left">
+            <h2 class="subtitle">
+              <span class="has-text-grey-light">Hola,</span>
+              <strong>Imelda Cosio</strong>
+            </h2>
+          </div>
+          <!--timeline-->
+          <div class="level-right">
+            <div class="select">
+              <div class="select">
+                <select>
+                  <option>Hoy</option>
+                  <option>Ayer</option>
+                  <option>Esta semana</option>
+                  <option selected>Este mes</option>
+                  <option>Este año</option>
+                  <option>Todo el tiempo</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="columns is-multiline">
+          <!--indicators-->
+          <div class="column is-12-tablet is-6-desktop is-3-widescreen">
+            <div class="notification is-link has-text">
+              <p class="title">321</p>
+              <p class="sybtitle">Órdenes</p>
+            </div>
+          </div>
+          <div class="column is-12-tablet is-6-desktop is-3-widescreen">
+            <div class="notification is-info has-text">
+              <p class="title">$5,678</p>
+              <p class="sybtitle">Revenue</p>
+            </div>
+          </div>
+          <div class="column is-12-tablet is-6-desktop is-3-widescreen">
+            <div class="notification is-primary has-text">
+              <p class="title">3,456</p>
+              <p class="sybtitle">Visitantes</p>
+            </div>
+          </div>
+          <div class="column is-12-tablet is-6-desktop is-3-widescreen">
+            <div class="notification is-success has-text">
+              <p class="title">35,678</p>
+              <p class="sybtitle">Page views</p>
+            </div>
+          </div>
+          <!--last orders-->
+          <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+            <div class="card">
+              <div class="card-content">
+                <h3 class="title is-4">Last orders</h3>
+                <div class="level">
+                  <div class="level-left">
+                    <div>
+                      <p class="title is-5 is-marginless">
+                        <a href="dashboard.html">987654</a>
+                      </p>
+                      <small>Apr 15, 22:06 by <a href="dashboard.html">Sharon Ramirez</a></small>
+                    </div>
+                  </div>
+                  <div class="level-right">
+                    <div class="has-text-right">
+                      <p class="title is-5 is-marginless">$56.98</p>
+                      <span class="tag is-warning">In progress</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="level">
+                  <div class="level-left">
+                    <div>
+                      <p class="title is-5 is-marginless">
+                        <a href="dashboard.html">876543</a>
+                      </p>
+                      <small>Apr 12, 15:03 by <a href="dashboard.html">Jesica Mendoza</a></small>
+                    </div>
+                  </div>
+                  <div class="level-right">
+                    <div class="has-text-right">
+                      <p class="title is-5 is-marginless">$67.98</p>
+                      <span class="tag is-success">In progress</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="level">
+                  <div class="level-left">
+                    <div>
+                      <p class="title is-5 is-marginless">
+                        <a href="dashboard.html">765432</a>
+                      </p>
+                      <small>Apr 9, 12:05 by <a href="dashboard.html">Gloria Ibet</a></small>
+                    </div>
+                  </div>
+                  <div class="level-right">
+                    <div class="has-text-right">
+                      <p class="title is-5 is-marginless">$78.98</p>
+                      <span class="tag is-danger">In progress</span>
+                    </div>
+                  </div>
+                </div>
+                <a class="button is-link is-outlined" href="dashboard.html">View all orders</a>
+              </div>
+            </div>
+          </div>
+          <!--most popular books-->
+          <div class="column is-12-tablet is-6-desktop is-4-fullhd">
+            <div class="card">
+              <div class="card-conent">
+                <h3 class="title is-4"> Most popular books </h3>
+                <!--book 1 -->
+                <div class="media">
+                  <div class="media-lef is-marginless">
+                    <p class="number">
+                      1
+                    </p>
+                  </div>
+                  <div class="media-left">
+                    <img src="https://placehold.co/150x250/blue/white?text" alt="book title" 
+                    width="40px">
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-5 is-spaced is-marginless"> <a href="">Learing  Bulma</a></p>
+                    </div>
+                    <div class="media-right">345 sold</div>
+                  </div>
+                    <!--book 2 -->
+                  <div class="media">
+                    <div class="media-lef is-marginless">
+                      <p class="number">
+                        2
+                      </p>
+                    </div>
+                    <div class="media-left">
+                      <img src="https://placehold.co/150x250/green/white?text" alt="book title" 
+                      width="40px">
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-5 is-spaced is-marginless"> <a href="">Learing  Vue</a></p>
+                      </div>
+                      <div class="media-right">567 sold</div>
+                    </div>
+                    <!--book 3 -->
+
+                    <div class="media">
+                      <div class="media-lef is-marginless">
+                        <p class="number">
+                          3
+                        </p>
+                      </div>
+                      <div class="media-left">
+                        <img src="https://placehold.co/150x250/orange/white?text" alt="book title" 
+                        width="40px">
+                      </div>
+                      <div class="media-content">
+                        <p class="title is-5 is-spaced is-marginless"> <a href="">Dev ops from zero</a></p>
+                        </div>
+                        <div class="media-right">789 sold</div>
+                      </div>
+
+                      <!--action boton -->
+                      <a class="button is-link is-outlined" href="dashboard.html">View all books</a>
+
+              </div>
+            </div>
+          </div>
+          <!--Most loyal customers-->
+          <div class="column is-12-tablet is-6-desktop is-4-fullhd">
+          <div class="card">
+            <div class="card-conent">
+              <h3 class="title is-4"> Most Loyal customers  </h3>
+              <!--customer  1 -->
+              <div class="media">
+                <div class="media-lef is-marginless">
+                  <p class="number">1</p>
+                </div>
+                 <div class="media-content">
+                  <p class="title is-5 is-spaced is-marginless"> 
+                    <a href="dashboard.html">Norma Urcadiz</a>
+                  </p>
+                  <p class="subtitle is-6">la paz Mx bcs</a> </p>
+                  </div>
+                  <div class="media-right">7 orders</div>
+                </div>
+                  <!-- customer 2 -->
+                <div class="media">
+                  <div class="media-lef is-marginless">
+                    <p class="number">
+                      2
+                    </p>
+                  </div>
+                 
+                  <div class="media-content">
+                    <p class="title is-5 is-spaced is-marginless"> <a href="">Gloria Ibet</a>
+                    </p>
+                    <p class="subtitle is-6">cd Const, Bcs Mx</a> </p>
+                    </div>
+                    <div class="media-right">5 orders</div>
+                  </div>
+                  <!-- customer 3 -->
+
+                  <div class="media">
+                    <div class="media-lef is-marginless">
+                      <p class="number">
+                        3
+                      </p>
+                    </div>
+                    
+                    <div class="media-content">
+                      <p class="title is-5 is-spaced is-marginless"> <a href="">Patricia Ocampo</a>
+                      </p>
+                      <p class="subtitle is-6">la paz, Bcs mx</a> </p>
+                      </div>
+                      <div class="media-right">4 order  </div>
+                    </div>
+
+                    <!--action boton -->
+                    <a class="button is-link is-outlined" href="dashboard.html">View all books</a>
+
+            </div>
+          </div>
+      </div>
+       </div>
+      </div>
+    </div>
+  </section>
+  <!--menu-->
+</body>
+
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Customers</title>
+</head>
+
+<body>
+  <!--navbar-->
+  <nav class="navbar">
+    <!--navbar-brand-->
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.certificatic.org">
+        <img src="https://placehold.co/300/orange/white?text=Logo" alt="certificatic logo">
+      </a>
+      <div class="navbar-burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <!--navbar-menu-->
+    <div class="navbar-menu">
+      <div class="navbar-start">
+        <div class="navbar-item">
+          <small>My company dashboard</small>
+        </div>
+      </div>
+      <div class="navbar-end">
+        <div class="navbar-item has dropdown is-hoverable">
+          <div class="navbar-link">Imelda Cosio</div>
+          <div class="navbar-dropdown">
+            <div class="navbar-item">
+              <span class="icon">
+                <i class="fa-solid fa-user"></i>
+              </span>
+              Perfil
+            </div>
+            <div class="navbar-item">
+              <span class="icon">
+                <i class="fa-solid fa-chart-simple"></i>
+              </span>
+              Estadísticas
+            </div>
+            <div class="navbar-item">
+              <span class="icon">
+                <i class="fa-solid fa-right-from-bracket"></i>
+              </span>
+              Salir
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--main section-->
+  <section class="section">
+    <div class="columns">
+      <!--left column (menu)-->
+      <div class="column is-4-tablet is-3-desktop is-2-widescreen">
+        <aside class="menu">
+          <p class="menu-label">Menu</p>
+          <ul class="menu-list">
+            <li>
+              <a href="dashboard.html">
+                <span class="icon"><i class="fa-solid fa-chart-simple"></i></span>
+                Dashboard
+              </a>
+            </li>
+            <li>
+              <a href="books.html">
+                <span class="icon"><i class="fa-solid fa-book"></i></i></span>
+                Libros
+              </a>
+            </li>
+            <li>
+              <a href="customers.html">
+                <span class="icon"><i class="fa-solid fa-person"></i></span>
+                Clientes
+              </a>
+            </li>
+            <li>
+              <a href="dashboard.html">
+                <span class="icon"><i class="fa-solid fa-file"></i></span>
+                Órdenes
+              </a>
+            </li>
+          </ul>
+        </aside>
+      </div>
+      <!--right column (content)-->
+      <div class="column">
+
+        <h3 class="title">Customers</h3>
+        <nav class="level">
+          <div class="level-left">
+            <div class="level-item">
+              <p class="subtitle">
+                <strong>3</strong> customers
+              </p>
+            </div>
+            <div class="level-item">
+              <a class="button is-success" href="customers.html">New</a>
+            </div>
+            <div class="level-item">
+              
+              <div class="field has-addons">
+                <p class="control">
+                  <input class="input" type="text" placeholder="Name, email, ...">
+                </p>
+                <p class="control">
+                  <a class="button">Search</a>
+                </p>
+              </div>
+
+            </div>
+          </div>
+          <div class="level-right">
+            <div class="level-ite">Order by</div>
+            <div class="level-ite"><a href="customer.html">With orders</a></div>
+            <div class="level-ite"><a href="customer.html">Without orders</a></div>
+          </div>
+
+        </nav>
+        <!--table-->
+        <table class="table  is-hoverable is-fullwidth">
+            <thead>
+                <tr>
+                   <th> <label class="checkbox" disabled>
+                        <input type="checkbox" disabled>
+                      </label></th>
+                  <th><abbr title="Name">Nombre</abbr></th>
+                  <th><abbr title="Email">correo</abbr></th>
+                  <th><abbr title="Country">Ciudad</abbr></th>
+                  <th><abbr title="Orders">Ordenes</abbr></th>
+                  <th><abbr title="Actions">Acciones</abbr></th>
+                </tr>
+              </thead>
+            <tfoot>
+                <tr>
+                    <th> <label class="checkbox" disabled>
+                        <input type="checkbox" disabled>
+                      </label></th>
+                    <th><abbr title="Name">Nombre</abbr></th>
+                    <th><abbr title="Email">correo</abbr></th>
+                    <th><abbr title="Country">Ciudad</abbr></th>
+                    <th><abbr title="Orders">Ordenes</abbr></th>
+                    <th><abbr title="Actions">Acciones</abbr></th>
+                  </tr>               
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>
+                    <label class="checkbox" disabled>
+                      <input type="checkbox" disabled>
+                      </label></td>
+                    <td> <a href="curtomers html">Norma Urcadiz</a></td>
+                    <td>nurcadiz@bcs.gob.mx</td>
+                    <td>La Paz BCS</td>
+                    <td><a href="customers.html">2</a></td>
+                    <td> <button class="button">Edit</button> <button class="button">Delete </button> </td>
+                  </tr>
+                  <tr>
+                    <td>
+                    <label class="checkbox" disabled>
+                      <input type="checkbox" disabled>
+                      </label></td>
+                    <td> <a href="curtomers html">Patty Ocampo</a></td>
+                    <td>locampo@bcs.gob.mx</td>
+                    <td>La Paz BCS</td>
+                    <td><a href="customers.html">8</a></td>
+                    <td> <button class="button">Edit</button> <button class="button">Delete </button> </td>
+                  </tr>
+                  <tr>
+                    <td>
+                    <label class="checkbox" disabled>
+                      <input type="checkbox" disabled>
+                      </label></td>
+                    <td> <a href="curtomers html">Sharon Ramirez</a></td>
+                    <td>sharon.ramirez@bcs.gob.mx</td>
+                    <td>La Paz BCS</td>
+                    <td><a href="customers.html">5</a></td>
+                    <td> <button class="button">Edit</button> <button class="button">Delete </button> </td>
+                  </tr>
+
+                </tbody>
+        </table>
+  
+
+
+        <!--paginacion -->       
+        <div class="columns">
+            <div class="column is-6 is-offset-3">
+              <nav class="pagination">
+                <a class="pagination-previous">previous</a>
+                <a class="pagination-next">next</a>
+                <ul class="pagination-list">
+                  <li><a class="pagination-link">1</a></li>
+                  <li><span class="pagination-ellipsis">&hellip;</span></li>
+                  <li><a class="pagination-link">59</a></li>
+                  <li><a class="pagination-link is-current">60</a></li>
+                  <li><a class="pagination-link">61</a></li>
+                  <li><span class="pagination-ellipsis">&hellip;</span></li>
+                  <li><a class="pagination-link">90</a></li>
+                </ul>
+              </nav>
+  
+            </div>
+          </div>
+
+
+
+   
+  
+
+      
+    </div> 
+
+   </div>
+  </section>
+</body>
+
+</html>

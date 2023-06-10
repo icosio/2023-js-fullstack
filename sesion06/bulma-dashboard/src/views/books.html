@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Books</title>
+</head>
+
+<body>
+  <!--navbar-->
+  <nav class="navbar">
+    <!--navbar-brand-->
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.certificatic.org">
+        <img src="https://placehold.co/300/orange/white?text=Logo" alt="certificatic logo">
+      </a>
+      <div class="navbar-burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <!--navbar-menu-->
+    <div class="navbar-menu">
+      <div class="navbar-start">
+        <div class="navbar-item">
+          <small>My company dashboard</small>
+        </div>
+      </div>
+      <div class="navbar-end">
+        <div class="navbar-item has dropdown is-hoverable">
+          <div class="navbar-link">Imelda Cosio</div>
+          <div class="navbar-dropdown">
+            <div class="navbar-item">
+              <span class="icon">
+                <i class="fa-solid fa-user"></i>
+              </span>
+              Perfil
+            </div>
+            <div class="navbar-item">
+              <span class="icon">
+                <i class="fa-solid fa-chart-simple"></i>
+              </span>
+              Estadísticas
+            </div>
+            <div class="navbar-item">
+              <span class="icon">
+                <i class="fa-solid fa-right-from-bracket"></i>
+              </span>
+              Salir
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--main section-->
+  <section class="section">
+    <div class="columns">
+      <!--left column (menu)-->
+      <div class="column is-4-tablet is-3-desktop is-2-widescreen">
+        <aside class="menu">
+          <p class="menu-label">Menu</p>
+          <ul class="menu-list">
+            <li>
+              <a href="dashboard.html">
+                <span class="icon"><i class="fa-solid fa-chart-simple"></i></span>
+                Dashboard
+              </a>
+            </li>
+            <li>
+              <a href="books.html">
+                <span class="icon"><i class="fa-solid fa-book"></i></i></span>
+                Libros
+              </a>
+            </li>
+            <li>
+              <a href="customers.html">
+                <span class="icon"><i class="fa-solid fa-person"></i></span>
+                Clientes
+              </a>
+            </li>
+            <li>
+              <a href="orders.html">
+                <span class="icon"><i class="fa-solid fa-file"></i></span>
+                Órdenes
+              </a>
+            </li>
+          </ul>
+        </aside>
+      </div>
+      <!--right column (content)-->
+      <div class="column">
+
+        <h3 class="title">Books</h3>
+        <nav class="level">
+          <div class="level-left">
+            <div class="level-item">
+              <p class="subtitle">
+                <strong>6</strong> books
+              </p>
+            </div>
+            <div class="level-item">
+              <a class="button is-success" href="books.html">New</a>
+            </div>
+            <div class="level-item">
+              
+              <div class="field has-addons">
+                <p class="control">
+                  <input class="input" type="text" placeholder="Book name, ISBN, ...">
+                </p>
+                <p class="control">
+                  <a class="button">Search</a>
+                </p>
+              </div>
+
+            </div>
+          </div>
+          <div class="level-right">
+            <div class="level-ite">Order by</div>
+            <div class="level-item">
+               <div class="select">
+                <select>
+                    <option>publish</option>
+                    <option>price</option>
+                    <option>relevance</option>
+                </select>
+               </div>
+            </div>
+          </div>
+        </nav>
+         <div class="columns is-multiline">
+            <!--book-->
+            <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+                <article class="box">
+                    <div class="media">
+                        <div class="media-left">                   
+                            <img src= "https://placehold.co/150x200/green/white?text" with="80px"> 
+                        </div>
+                    <div class="media-content">
+                        <p class="title is-5 is-marginless">Data Structures and Algorithms</p>
+                        <p class="subtitle is-marginless">$593.94</p>
+                        <div class="content is-small">
+                          507 pages <br>
+                          ASIN: B08KYMK4NR <br>
+                            <a href="books html">edit</a>
+                            <span>.</span>
+                            <a>delete</a>
+                        </div>
+                    </div>
+                    </div>
+                </article>
+            </div>
+            <!--book 2-->
+            <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+                <article class="box">
+                    <div class="media">
+                        <div class="media-left">                   
+                            <img src= "https://placehold.co/150x200/green/white?text" with="80px"> 
+                        </div>
+                    <div class="media-content">
+                        <p class="title is-5 is-marginless">Learning bulma</p>
+                        <p class="subtitule is-marginless">$12.34</p>
+                        <div class="content is-small">
+                            345 pages <br>
+                            ISBN: 9876543210 <br>
+                            <a href="books html">edit</a>
+                            <span>.</span>
+                            <a>delete</a>
+                        </div>
+                    </div>
+                    </div>
+                </article>
+            </div>
+           <!--book 3-->
+           <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+                <article class="box">
+                    <div class="media">
+                        <div class="media-left">                   
+                            <img src= "https://placehold.co/150x200/green/white?text" with="80px"> 
+                        </div>
+                    <div class="media-content">
+                        <p class="title is-5 is-marginless">Data Structures and Algorithms</p>
+                        <p class="subtitle is-marginless">$593.94</p>
+                        <div class="content is-small">
+                          507 pages <br>
+                          ASIN: B08KYMK4NR <br>
+                                 <a href="books html">edit</a>
+                            <span>.</span>
+                            <a>delete</a>
+                        </div>
+                    </div>
+                    </div>
+                </article>
+            </div>
+           <!--book 4-->
+            <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+                <article class="box">
+                    <div class="media">
+                        <div class="media-left">                   
+                            <img src= "https://placehold.co/150x200/green/white?text" with="80px"> 
+                        </div>
+                    <div class="media-content">
+                        <p class="title is-5 is-marginless">Designing Data-Intensive Applications</p>
+                        <p class="subtitle is-marginless">$875.10</p>
+                        <div class="content is-small">
+                          1051 pages <br>
+                          ASIN: B06XPJML5D <br>
+                                  <a href="books html">edit</a>
+                            <span>.</span>
+                            <a>delete</a>
+                        </div>
+                    </div>
+                    </div>
+                </article>
+            </div>
+
+           <!--book 5-->
+            <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+                <article class="box">
+                    <div class="media">
+                        <div class="media-left">                   
+                            <img src= "https://placehold.co/150x200/green/white?text" with="80px"> 
+                        </div>
+                        <div class="media-content">
+                        <p class="title is-5 is-marginless">Fundamentals of Software Architecture</p>
+                        <p class="subtitle is-marginless">$889.54</p>
+                        <div class="content is-small">
+                          345 pages <br>
+                          ASIN: B0849MPK73 <br>
+                                  <a href="books html">edit</a>
+                            <span>.</span>
+                            <a>delete</a>
+                        </div>
+                    </div>
+                    </div>
+                </article>
+            </div>
+          <!--book 6-->
+          <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+            <article class="box">
+                <div class="media">
+                    <div class="media-left">                   
+                        <img src= "https://placehold.co/150x200/green/white?text" with="80px"> 
+                    </div>
+                <div class="media-content">
+                    <p class="title is-5 is-marginless">Improving the Design of Existing Code</p>
+                    <p class="subtitle is-marginless">$869.28</p>
+                    <div class="content is-small">
+                      432 pages <br>
+                      ASIN: B07LCM8RG2 <br>
+                          <a href="books html">edit</a>
+                        <span>.</span>
+                        <a>delete</a>
+                    </div>
+                </div>
+                </div>
+            </article>
+        </div>
+        </div>
+
+        <!--paginacion -->       
+        <div class="columns">
+            <div class="column is-6 is-offset-3">
+              <nav class="pagination">
+                <a class="pagination-previous">previous</a>
+                <a class="pagination-next">next</a>
+                <ul class="pagination-list">
+                  <li><a class="pagination-link">1</a></li>
+                  <li><span class="pagination-ellipsis">&hellip;</span></li>
+                  <li><a class="pagination-link">59</a></li>
+                  <li><a class="pagination-link is-current">60</a></li>
+                  <li><a class="pagination-link">61</a></li>
+                  <li><span class="pagination-ellipsis">&hellip;</span></li>
+                  <li><a class="pagination-link">90</a></li>
+                </ul>
+              </nav>
+  
+            </div>
+          </div>
+  
+
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
